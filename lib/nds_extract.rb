@@ -47,7 +47,7 @@ def total_gross(source)
   results = directors_totals(source)
   directors = list_of_directors(source)
   directors.length.times do |index|
-    gross_total += results[directors[0]]
+    gross_total += results[directors[index]]
   end
   gross_total
 end
