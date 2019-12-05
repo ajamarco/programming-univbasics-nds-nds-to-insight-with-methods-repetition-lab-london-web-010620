@@ -28,8 +28,9 @@ def list_of_directors(source)
   # Write this implementation
   directors = []
   source.length.times do |index|
-    directors << source[index][:]
+    directors << source[index][:name]
   end 
+  directors
 end
 
 def total_gross(source)
